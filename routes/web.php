@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\WelcomeController;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\KategoriController;
@@ -20,4 +21,9 @@ Route::group(['prefix' => 'user'], function () {
     Route::get('/{id}/edit', [UserController::class, 'edit']);   // Form edit user
     Route::put('/{id}', [UserController::class, 'update']);      // Simpan perubahan user
     Route::delete('/{id}', [UserController::class, 'destroy']);  // Hapus user
+=======
+
+Route::get('/', function () {
+    return view('welcome');
+>>>>>>> 5d53c0df12e5cd437ea24fe360af394196482388
 });
